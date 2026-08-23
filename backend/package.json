@@ -1,0 +1,57 @@
+{
+	"name": "taskspace-backend",
+	"version": "1.0.0",
+	"description": "A production-ready Node.js and Express.js starter kit.",
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js",
+		"lint": "eslint .",
+		"check": "npm run lint && prettier . --check",
+		"format": "prettier . --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ShankarDutta/taskspace-mern-webapp"
+	},
+	"keywords": [
+		"node",
+		"nodejs",
+		"express",
+		"expressjs",
+		"starter",
+		"starter-kit",
+		"backend",
+		"api",
+		"rest-api",
+		"javascript",
+		"boilerplate",
+		"template"
+	],
+	"author": "Shankar Dutta",
+	"license": "MIT",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/ShankarDutta/taskspace-mern-webapp/issues"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"dependencies": {
+		"compression": "^1.8.1",
+		"cors": "^2.8.6",
+		"dotenv": "^17.4.2",
+		"express": "^5.2.1",
+		"express-rate-limit": "^8.6.2",
+		"helmet": "^8.3.0",
+		"mongoose": "^9.9.1",
+		"nodemon": "^3.1.14",
+		"zod": "^4.4.3"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.8.0",
+		"globals": "^17.9.0",
+		"prettier": "^3.9.6"
+	}
+}

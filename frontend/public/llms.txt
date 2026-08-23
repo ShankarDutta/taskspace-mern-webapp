@@ -1,0 +1,47 @@
+# React Vite Frontend Starter Kit
+
+> A production-ready frontend starter template built with React and Vite, featuring Tailwind CSS, React Router, dark mode, SEO essentials, and a scalable project structure.
+
+Important notes:
+
+- Built for modern frontend applications.
+- Includes SEO best practices and developer tooling.
+- Easy to extend for portfolios, business websites, dashboards, and SaaS applications.
+
+## Project
+
+- [Repository](https://github.com/ShankarDutta/react-vite-starter-kit): Source code and project files.
+- [Author](https://github.com/ShankarDutta): GitHub profile.
+- [Portfolio](https://shankarduttadev.vercel.app/): Personal portfolio and projects.
+
+## Documentation
+
+- [React](https://react.dev/): Official React documentation.
+- [Vite](https://vite.dev/guide/): Official Vite guide.
+- [React Router](https://reactrouter.com/): Client-side routing.
+- [Tailwind CSS](https://tailwindcss.com/docs): Utility-first CSS framework.
+- [ESLint](https://eslint.org/docs/latest/): JavaScript linting.
+- [Prettier](https://prettier.io/docs/): Code formatting.
+
+## Features
+
+- React
+- Vite
+- React Router
+- Tailwind CSS
+- Dark & Light Theme
+- SEO Metadata
+- Open Graph Metadata
+- Twitter Card Metadata
+- Canonical URLs
+- robots.txt
+- sitemap.xml
+- llms.txt
+- ESLint
+- Prettier
+- Path Aliases
+- 404 Not Found Page
+
+## License
+
+- MIT
