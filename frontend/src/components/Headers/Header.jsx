@@ -23,7 +23,7 @@ const Header = () => {
 
             <img
               src="/logo-mobile.png"
-              alt="logo-desktop"
+              alt="logo-mobile"
               className="block h-12 w-auto md:hidden"
             />
           </Link>
