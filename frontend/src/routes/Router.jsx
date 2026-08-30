@@ -1,4 +1,4 @@
-import RootLayout from "@/layouts/RootLayout";
+import PublicLayout from "@/layouts/PublicLayout";
 import About from "@/pages/About";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/NotFound";
@@ -7,7 +7,7 @@ import { createBrowserRouter } from "react-router";
 const Router = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout />,
+    element: <PublicLayout />,
     errorElement: <NotFound />,
     children: [
       {
