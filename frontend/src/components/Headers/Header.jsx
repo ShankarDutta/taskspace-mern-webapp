@@ -64,12 +64,12 @@ const Header = () => {
             variant="outline"
             nativeButton={false}
             className="font-inter hidden font-medium md:flex"
-            render={<Link to={"/login"}>Login</Link>}></Button>
+            render={<Link to={"/auth/login"}>Login</Link>}></Button>
 
           <Button
             className="font-inter flex bg-[#4F46E5] text-sm font-medium text-white hover:bg-blue-500"
             nativeButton={false}
-            render={<Link to={"/register"}>Register</Link>}></Button>
+            render={<Link to={"/auth/register"}>Register</Link>}></Button>
 
           <div className="flex items-center lg:hidden">
             <MobileHeader />

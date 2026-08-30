@@ -66,7 +66,7 @@ const MobileHeader = () => {
               variant="default"
               nativeButton={false}
               className="font-inter font-medium"
-              render={<Link to={"/login"}>Login</Link>}></Button>
+              render={<Link to={"/auth/login"}>Login</Link>}></Button>
           </nav>
         </section>
       </SheetContent>
