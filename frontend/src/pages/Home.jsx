@@ -13,12 +13,12 @@ const Home = () => {
         }
       />
 
-      <section className="space-y-4 px-6 text-center">
+      <section className="font-bricolage space-y-4 px-6 text-center">
         <h1 className="text-3xl font-semibold lg:text-5xl">
           React + Vite Starter Kit
         </h1>
 
-        <h2 className="text-lg lg:text-3xl">
+        <h2 className="font-inter text-lg lg:text-3xl">
           Production-grade React frontend starter template
         </h2>
 
