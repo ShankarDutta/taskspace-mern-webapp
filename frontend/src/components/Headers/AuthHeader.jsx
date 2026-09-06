@@ -16,7 +16,7 @@ const AuthHeader = () => {
           <img
             src="/logo-desktop.png"
             alt="logo-desktop"
-            className="hidden h-auto w-32 md:block"
+            className="h-auto w-32"
           />
         </Link>
 
