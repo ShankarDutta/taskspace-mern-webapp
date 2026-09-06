@@ -12,7 +12,7 @@ import { Link } from "react-router";
 
 const Login = () => {
   return (
-    <div className="grid h-[84dvh] place-items-center px-6">
+    <div className="grid h-auto place-items-center px-6 py-6 md:h-[82dvh] md:py-0">
       <Card className="grid w-full max-w-md grid-cols-1 gap-2 shadow-md md:gap-4 md:px-4 md:py-6">
         <CardHeader className="text-center">
           <CardTitle className="font-bricolage text-2xl font-bold md:text-[32px]">
@@ -49,7 +49,7 @@ const Login = () => {
           <CardDescription className="font-inter text-center text-[12px] font-normal md:text-[14px]">
             Don't have an account?{" "}
             <Link
-              to="/register"
+              to="/auth/register"
               className="text-blue-500">
               register
             </Link>

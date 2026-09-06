@@ -1,3 +1,4 @@
+import AuthFooter from "@/components/Footers/AuthFooter";
 import AuthHeader from "@/components/Headers/AuthHeader";
 import { Outlet } from "react-router";
 
@@ -9,6 +10,8 @@ const AuthLayout = () => {
       <main className="mx-auto max-w-7xl">
         <Outlet />
       </main>
+
+      <AuthFooter />
     </>
   );
 };
