@@ -1,12 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Field, FieldError, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { Spinner } from "@/components/ui/spinner";
 import { loginSchema } from "@/lib/zodSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const LoginForm = () => {
-  const { handleSubmit, control } = useForm({
+  const {
+    handleSubmit,
+    control,
+    formState: { isSubmitting },
+    reset,
+  } = useForm({
     resolver: zodResolver(loginSchema),
 
     defaultValues: {
@@ -17,8 +24,15 @@ const LoginForm = () => {
     mode: "all",
   });
 
-  const sendLoginData = (lData) => {
+  const sendLoginData = async (lData) => {
+    await new Promise((r) => setTimeout(r, 1800)); // delay data submittinng
+
     console.log(lData);
+
+    if (lData) {
+      reset();
+      toast.success("Login Succesfully");
+    }
   };
 
   return (
@@ -79,8 +93,11 @@ const LoginForm = () => {
 
       <Button
         type="submit"
+        disabled={isSubmitting}
         className="font-inter cursor-pointer rounded-none bg-[#4F46E5] p-3 text-[12px] font-semibold text-white hover:bg-blue-500">
-        Login
+        {isSubmitting ?
+          <Spinner />
+        : <>Login</>}
       </Button>
     </form>
   );
