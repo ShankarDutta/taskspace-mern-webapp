@@ -25,7 +25,7 @@ const LoginForm = () => {
   });
 
   const sendLoginData = async (lData) => {
-    await new Promise((r) => setTimeout(r, 1800)); // delay data submittinng
+    await new Promise((r) => setTimeout(r, 1800)); //devlopmet test delay data submittinng
 
     console.log(lData);
 
