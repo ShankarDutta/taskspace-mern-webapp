@@ -7,6 +7,7 @@ import corsOption from "./config/corsOption.js";
 import connectDb from "./config/db.js";
 import { env } from "./config/env.js";
 import rateLimiter from "./middlewares/rateLimiter.js";
+import authRoutes from "./routes/auth.routes.js";
 import healthRoute from "./routes/health.routes.js";
 
 // Initialize Express application
@@ -31,8 +32,9 @@ app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
 app.use(cors(corsOption));
 
-// Health check endpoint
+// api  endpoint
 app.use("/api/v1/health", healthRoute);
+app.use("/api/v1/auth/", authRoutes);
 
 // Start the server
 const startServer = async () => {
