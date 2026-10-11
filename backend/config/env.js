@@ -16,6 +16,7 @@ const envSchema = z.object({
 		error: "MONGODB_URI must be a valid MongoDB connection string",
 	}),
 	NODE_ENV: z.enum(["production", "development"]),
+	JWT_SIGNATURE: z.string().min(1, { error: "JWT_SIGNATURE is required" }),
 });
 
 const envVars = {
@@ -23,6 +24,7 @@ const envVars = {
 	CLIENT_URL: process.env.CLIENT_URL,
 	MONGODB_URI: process.env.MONGODB_URI,
 	NODE_ENV: process.env.NODE_ENV,
+	JWT_SIGNATURE: process.env.JWT_SIGNATURE,
 };
 
 export const env = envSchema.parse(envVars);

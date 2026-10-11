@@ -1,4 +1,5 @@
 import compression from "compression";
+import cookieParser from "cookie-parser";
 import cors from "cors";
 import { setServers } from "dns/promises";
 import express from "express";
@@ -9,7 +10,6 @@ import { env } from "./config/env.js";
 import rateLimiter from "./middlewares/rateLimiter.js";
 import authRoutes from "./routes/auth.routes.js";
 import healthRoute from "./routes/health.routes.js";
-
 // Initialize Express application
 const app = express();
 
@@ -29,6 +29,8 @@ app.use(compression());
 // Body parsers
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
+
+app.use(cookieParser());
 
 app.use(cors(corsOption));
 
